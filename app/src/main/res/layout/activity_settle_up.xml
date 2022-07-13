@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettleUp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_200">
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="20dp"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETTLE UP"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/dummy_"
+            android:scaleType="centerCrop" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TableRow android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Balances (Individual)"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow android:layout_weight="2" android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Outstanding Amount"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹100"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow android:layout_weight="2" android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Participants (in group)"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/participants_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow android:layout_weight="2" android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Paid by you"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/selfpay_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹100"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow android:layout_weight="2" android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount to be paid"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/balance_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹0"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5in"
+            android:text="SPLIT UP"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
